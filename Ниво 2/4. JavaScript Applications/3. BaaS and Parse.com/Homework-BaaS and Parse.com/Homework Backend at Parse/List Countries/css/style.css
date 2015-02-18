@@ -1,0 +1,56 @@
+table {
+	border-collapse: collapse;;
+}
+table th,td {
+	border: 1px solid black;
+    padding: 5px;
+}
+#country {
+    width: 200px;
+    float: left;
+    margin-left: 50px;
+}
+
+#town {
+    float: left;
+    margin-left: 50px;
+    width:  200px;
+}
+
+#message-box {
+    position: fixed;
+    width: 500px;
+    top: 10%;
+    left: calc(50% - 250px);
+}
+.box {
+    width: 100%;
+    opacity: 0;
+    padding: 20px;
+    font-size: 15px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.success {
+    background-color: green;
+}
+
+.error {
+    background-color: red;
+}
+button {
+    background-color: #ff9c00;
+    color: white;
+    border: none;
+    margin: 2px;
+}
+.delete {
+    background-color: red;
+}
+.edit {
+    background-color: #5cb85c;
+}
+.add {
+    background-color: #5cb85c;
+}

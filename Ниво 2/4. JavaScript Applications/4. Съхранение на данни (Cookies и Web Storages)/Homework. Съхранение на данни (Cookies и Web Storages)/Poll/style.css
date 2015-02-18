@@ -1,0 +1,16 @@
+#contain{
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+p{
+	text-align: center;
+}
+li{
+	text-align: left;
+	margin-left: 110px;
+}
+

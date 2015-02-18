@@ -1,0 +1,38 @@
+#addbook {
+	margin-top: 30px;
+}
+#addbook label {
+	display: inline-block;
+	width: 50px;
+
+}
+
+#addbook >  div {
+	margin:10px 0;
+}
+
+#message-box {
+    position: fixed;
+    width: 500px;
+    bottom: 50%;
+    left: calc(50% - 250px);
+}
+.box {
+    width: 100%;
+    opacity: 0;
+    padding: 20px;
+    font-size: 15px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.success {
+    background-color: green;
+}
+
+.error {
+    background-color: red;
+}
+.warrning {
+	background-color: orange;
+}

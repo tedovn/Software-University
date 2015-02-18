@@ -1,0 +1,23 @@
+#message-box {
+    position: fixed;
+    width: 500px;
+    top: 10%;
+    left: calc(50% - 250px);
+}
+
+.box {
+    width: 100%;
+    opacity: 0;
+    padding: 20px;
+    font-size: 15px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.success {
+    background-color: green;
+}
+
+.error {
+    background-color: red;
+}

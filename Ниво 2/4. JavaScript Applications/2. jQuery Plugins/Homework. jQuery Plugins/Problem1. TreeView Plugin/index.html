@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Tree View Plugin</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="test.js"></script>
+</head>
+<body>
+    <ul class="tree">
+        <li>
+            Item1
+            <ul>
+                <li>
+                    Item11
+                    <ul>
+                        <li>
+                            Item111
+                            <ul>
+                                <li>Item1111</li>
+                                <li>Item1112</li>
+                                <li>Item1113</li>
+                                <li>Item1114</li>
+                            </ul>
+                        </li>
+                        <li>Item112</li>
+                        <li>Item113</li>
+                        <li>Item114</li>
+                    </ul>
+                </li>
+                <li>Item12</li>
+                <li>Item13</li>
+                <li>Item14</li>
+            </ul>
+        </li>
+        <li>Item2</li>
+        <li>Item3</li>
+        <li>
+            Item4
+            <ul>
+                <li>Item41</li>
+                <li>Item42</li>
+                <li>Item43</li>
+                <li>Item44</li>
+            </ul>
+        </li>
+        <li>Item5</li>
+    </ul>
+    <script type="text/javascript">
+		  $(document).ready(function() {
+		   $('.tree').treeView();
+		  });
+	</script>	  
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+    <title>MessageBox</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="messagebox.js" type="text/javascript"></script>
+</head>
+<body>
+    <button class="success-btn">Success</button>
+    <button class="error-btn">Error</button>
+    <div id="message-box"></div>
+    <script>
+    $(document).ready(function () {
+        $('#message-box').messageBox();
+    });  
+    </script>
+</body>
+</html>
