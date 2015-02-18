@@ -1,0 +1,1 @@
+SELECT Name as DeparmentsNames FROM Departments 
