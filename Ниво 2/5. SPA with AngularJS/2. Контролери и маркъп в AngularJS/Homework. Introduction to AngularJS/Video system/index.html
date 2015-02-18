@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Video system</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css"/>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap-theme.css"/>
+</head>
+<body ng-app="video-system">
+<div class="container">
+    <div class="navbar">
+        <ul class="nav">
+            <li><a href="#/Videos">Videos</a></li>
+        </ul>
+    </div>
+
+    <div ng-controller="VideoSystemController" >
+
+        <div ng-repeat="video in videos">
+            <h3> {{video.title | uppercase}} </h3>
+            <img src="" ng-src="{{video.picture}}" alt=""/>
+            <div><strong>Date:</strong> {{video.Date | date:'dd.MMM.yyyy'}}</div>
+            <div><strong>Category:</strong> {{video.category}}</div>
+
+            <div>
+                <h2>Comments:</h2>
+                <div>
+                    OrderBy:
+                    <select ng-model="sortOrder">
+                        <option selected value="-votes">Votes</option>
+                        <option value="author">Author</option>
+                        <option value="-date">Date</option>
+                    </select>
+                    Show:
+                    <select ng-model="filterBy.author">
+                        <option selected value="">All</option>
+                        <option value="vladimir">Vladimir</option>
+                        <option value="svetlin">Svetlin</option>
+                        <option value="petya">Petya</option>
+                    </select>
+                </div>
+                <ul id="comments">
+                    <li ng-repeat="comment in video.comments | orderBy:sortOrder | filter:filterBy">
+                        <div class="row well">
+                            <div class="col-md-11">
+                                <img src="" ng-src="{{comment.pictureUrl}}" alt=""/>
+                                <strong>{{comment.username}}</strong>
+                                <span class="pull-right">{{comment.Date}}</span>
+                                <br />
+                                {{comment.content}} <br/>
+
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+</div>
+<script src="lib/angular/angular.js"></script>
+<script src="js/app.js"></script>
+<script src="js/controllers/VideoSystemController.js"></script>
+</body>
+</html>

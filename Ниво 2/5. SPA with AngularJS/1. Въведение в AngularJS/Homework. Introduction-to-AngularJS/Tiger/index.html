@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Tiger Web App</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+</head>
+<body ng-app="tiger-web-app">
+<script src="lib/angular.js"></script>
+
+<div id='wrapper' ng-controller='TigerApp' ng-style='tigerStyle.wrapper'>
+    <div ng-style='tigerStyle.divSize'><h3 ng-style='tigerStyle.title'>TIGER</h3>
+        <p ng-style='tigerStyle.text'><span ng-style='tigerStyle.bold'>Name:</span> {{tiger.Name}}</p>
+        <p ng-style='tigerStyle.text'><span ng-style='tigerStyle.bold'>Born:</span> {{tiger.Born}}</p>
+        <p ng-style='tigerStyle.text'><span ng-style='tigerStyle.bold'>Birth date:</span>{{tiger.BirthDate}}</p>
+        <p ng-style='tigerStyle.text'><span ng-style='tigerStyle.bold'>Live: </span> {{tiger.Live}}</p>
+    </div>
+    <img ng-style='tigerStyle.img'  ng-src='{{tiger.url}}' src=''/>
+</div >
+
+<script src="js/app.js"></script>
+<script src="js/controllers/TigerApp.js"></script>
+</body>
+</html>
